@@ -48,7 +48,7 @@
      
     }
     .tramos{
-      Font-size: 40px;
+      Font-size: 30px;
       font-weight: 400;
       Color: white;
 }
@@ -59,6 +59,7 @@
       color: #424141;
     }
     .years{
+  
       padding:10px;
       border: solid 4px white;
       border-radius: 20px;
@@ -77,13 +78,22 @@
       border-top:solid 4px white;
       font-size: 40px;
     }
-     #grado-a, #grado-b {
+     #grado-a{
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+
+    }
+      #grado-b {
       padding: 15px;
       text-align: center;
       margin-bottom: 10px;
       width: 100%;
     }
-
+    .tituloCuotas{
+      font-size: 22px;
+      color: rgb(78, 78, 78);
+    }
     h2 {
       margin: 10px 0;
       font-size: 100px;
@@ -91,7 +101,7 @@
     }
      .creador{
      font-size: 28px;
-     color: #919191;
+     color: #8a8a8a;
      font-weight: 100;
      margin-top:70px;
 }
@@ -108,16 +118,36 @@
 .contenedor{
   display:flex;
   max-height: 220px;
-  width: 85%;
+  width: 100%;
   padding: 20px;
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
   background-color: #00b47f;
   border-radius:40px;
   margin-bottom: 40px;
 
 }
-
+.contenedorCuotas{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.fila {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .col {
+    font-size: 30px;
+    border-right: solid 3px white;
+    padding-right: 10px;
+    font-weight: 600;
+    color: rgb(255, 213, 0)
+  }
+  .col2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
 
   </style>
 </head>
@@ -140,9 +170,25 @@
         <div id="grado-a">
           <h2>$91.990</h2>
           <h4 class="tramos">Entre $0 a $500.000</h4>
-           <h4 class="codigo">PROTIPA/0-500</h4>
+           <h4 class="codigo">PROTWAT/0-500</h4>
+        </div>
+         <div class="contenedorCuotas">
+          <h2 class="tituloCuotas">EN CUOTAS</h2>
+          <div class="fila">
+            <div class="col">12</div>
+            <div class="col2">$7.666</div>
+          </div>
+          <div class="fila">
+            <div class="col">24</div>
+            <div class="col2">$3.833</div>
+          </div>
+          <div class="fila">
+            <div class="col">36</div>
+            <div class="col2">$2.555</div>
+          </div>
         </div>
       </div>
+      
 
       <div class="contenedor">
         <div class="years">
@@ -150,9 +196,25 @@
           <h4 class="elemento2">Años</h4>
         </div>
         <div id="grado-a">
-        <h2>$97.990</h2>
-        <h4 class="tramos">Entre $500.001 a $800.000</h4>
-          <h4 class="codigo">PROTIPH/501-800</h4>
+          <h2>$97.990</h2>
+          <h4 class="tramos">Entre $500.001 a $800.000</h4>
+          <h4 class="codigo">PROTWAT/501-800</h4>
+        </div>
+        
+        <div class="contenedorCuotas">
+          <h2 class="tituloCuotas">EN CUOTAS</h2>
+          <div class="fila">
+            <div class="col">12</div>
+            <div class="col2">$8.166</div>
+          </div>
+          <div class="fila">
+            <div class="col">24</div>
+            <div class="col2">$4.083</div>
+          </div>
+          <div class="fila">
+            <div class="col">36</div>
+            <div class="col2">$2.722</div>
+          </div>
         </div>
       </div>
 
@@ -164,21 +226,25 @@
         <div id="grado-a">
         <h2>$103.990</h2>
         <h4 class="tramos">Entre $800.001 a $1.400.000</h4>
-          <h4 class="codigo">PROTIPA/801-1400</h4>
+          <h4 class="codigo">PROTWAT/801-1400</h4>
+        </div>
+         <div class="contenedorCuotas">
+          <h2 class="tituloCuotas">EN CUOTAS</h2>
+          <div class="fila">
+            <div class="col">12</div>
+            <div class="col2">$8.666</div>
+          </div>
+          <div class="fila">
+            <div class="col">24</div>
+            <div class="col2">$4.333</div>
+          </div>
+          <div class="fila">
+            <div class="col">36</div>
+            <div class="col2">$2.889</div>
+          </div>
         </div>
       </div>
-
-      <div class="contenedor">
-        <div class="years">
-          <h4 class="elemento1">2</h4>
-          <h4 class="elemento2">Años</h4>
-        </div>
-        <div id="grado-a">
-        <h2>$110.990</h2>
-        <h4 class="tramos">Entre $1.400.001 a $2.000.000</h4>
-          <h4 class="codigo">PROTIPA/801-1400</h4>
-        </div>
-      </div>
+      
       
 
 <div class="descripcion">
